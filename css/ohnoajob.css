@@ -1,0 +1,38 @@
+head{
+    color: black;
+}
+
+body{
+    h1{
+        color: black;
+        size: 200px;
+    }
+
+    h2{
+        color: black;
+        size: 150px;
+    }
+    
+    h3{
+        color: black;
+        size: 100px;
+        border-bottom: 2px solid black;
+    }
+
+    h6{
+        color: black;
+        size: 75px;
+        border-bottom: 2px solid black;
+    }
+
+    h4{
+        color: black;
+        size: 150px;
+        text-align:end;
+    }
+    
+    h5{
+        color: black;
+        size: 100px;
+    }
+}
