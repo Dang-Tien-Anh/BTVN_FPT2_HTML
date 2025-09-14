@@ -1,0 +1,237 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #6b4f4f;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-menu li a {
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ff6600;
+}
+
+/* Contact Intro */
+.contact-intro {
+  background: url(' ../images/coffee-background.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.contact-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-intro a,
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* Contact Form Section */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 2rem;
+}
+
+.contact-info h4.orange {
+  color: #ff6600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+button[type="submit"] {
+  background-color: #6b4f4f;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.logo-circle img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.logo-circle p {
+  font-style: italic;
+  color: #555;
+  max-width: 500px;
+  margin: auto;
+  font-size: 0.95rem;
+}
+
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+.footer-signup input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-signup button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #6b4f4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-quote {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-quote img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-quote p {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.matcha-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.matcha-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.matcha-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.matcha-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
