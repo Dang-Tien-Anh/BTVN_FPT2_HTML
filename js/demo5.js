@@ -12,4 +12,9 @@ function weather(ct){
     });
 }
 
-weather("tokyo");
+weather("---");
+
+function changeCity(e){
+    var city = e.value;
+    weather(city);
+}
