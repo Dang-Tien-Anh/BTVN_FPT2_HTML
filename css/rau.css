@@ -1,0 +1,109 @@
+/* style.css - theme xanh lá cho rau & trái cây */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6fff6;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  color: #fff;
+  padding: 18px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.header h1 { font-size: 20px; }
+.header nav a {
+  color: #fff;
+  margin-left: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.header nav a:hover { text-decoration: underline; }
+
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 880px) {
+  .checkout-grid {
+    grid-template-columns: 1fr 360px;
+  }
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Form */
+.form-group { margin-bottom: 12px; }
+.form-group label { display:block; margin-bottom: 6px; font-weight: 600; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+textarea { resize: vertical; }
+
+/* Cart */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.cart-item:last-child { border-bottom: none; }
+.cart-total {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #43a047;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover { background: #2e7d32; }
+.btn.secondary {
+  background: #fff;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+/* Footer */
+.footer {
+  text-align:center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}

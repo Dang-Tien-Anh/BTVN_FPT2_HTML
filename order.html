@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết đơn hàng - Rau & Trái cây</title>
+  <link rel="stylesheet" href="css/rau.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🥬 Rau & 🍎 Trái cây sạch</h1>
+    <nav>
+      <a href="checkout.html">Quay lại</a>
+      <a href="#">Trang chủ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Chi tiết đơn hàng</h2>
+      <div id="orderInfo"></div>
+      <a href="checkout.html" class="btn secondary" style="margin-top:12px;display:inline-block;">Đặt hàng mới</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 Rau & Trái cây sạch
+  </footer>
+
+  <script>
+    function getParams() {
+      const params = new URLSearchParams(window.location.search);
+      return Object.fromEntries(params.entries());
+    }
+
+    const data = getParams();
+    const infoDiv = document.getElementById("orderInfo");
+
+    infoDiv.innerHTML = `
+      <p><strong>Khách hàng:</strong> ${data.name || ""}</p>
+      <p><strong>SĐT:</strong> ${data.phone || ""}</p>
+      <p><strong>Địa chỉ:</strong> ${data.address || ""}</p>
+      <p><strong>Thanh toán:</strong> ${data.payment || ""}</p>
+      <h3>Sản phẩm:</h3>
+      <ul>
+        <li>${data.item1 || ""}</li>
+        <li>${data.item2 || ""}</li>
+      </ul>
+      <p><strong>Tổng cộng:</strong> ${Number(data.total || 0).toLocaleString("vi-VN")}đ</p>
+      <p style="margin-top:10px;color:green;font-weight:bold;">Đơn hàng đang được xử lý!</p>
+    `;
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán - Rau & Trái cây</title>
+  <link rel="stylesheet" href="css/rau.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🥬 Rau & 🍎 Trái cây sạch</h1>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Đặt hàng</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main class="container checkout-grid">
+    <!-- Form thông tin -->
+    <section class="card">
+      <h2>Thông tin giao hàng</h2>
+      <form action="order-details.html" method="GET" id="checkoutForm">
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Số điện thoại</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Địa chỉ</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Phương thức thanh toán</label>
+          <select id="payment" name="payment">
+            <option value="cod">Thanh toán khi nhận hàng</option>
+            <option value="bank">Chuyển khoản ngân hàng</option>
+          </select>
+        </div>
+
+        <!-- Hidden giỏ hàng -->
+        <input type="hidden" name="item1" value="Rau muống sạch - 1kg - 25,000đ">
+        <input type="hidden" name="item2" value="Táo Mỹ - 2kg - 160,000đ">
+        <input type="hidden" name="total" value="185000">
+
+        <button type="submit" class="btn">Xác nhận đơn hàng</button>
+      </form>
+    </section>
+
+    <!-- Giỏ hàng -->
+    <aside class="card">
+      <h3>Giỏ hàng</h3>
+      <div class="cart-item">
+        <span>Rau muống sạch (1kg)</span>
+        <span>25,000đ</span>
+      </div>
+      <div class="cart-item">
+        <span>Táo Mỹ (2kg)</span>
+        <span>160,000đ</span>
+      </div>
+      <div class="cart-total">
+        <span>Tổng cộng</span>
+        <span>185,000đ</span>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    © 2025 Rau & Trái cây sạch
+  </footer>
+</body>
+</html>
